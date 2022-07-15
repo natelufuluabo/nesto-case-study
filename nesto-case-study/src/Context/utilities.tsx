@@ -2,12 +2,7 @@ export interface AppContext {
     requestDetails? : {},
     customerInfo? : {},
     updateCustomerProfile? : (value : {}) => void,
-    updateContact? : (value : {}) => void
-}
-
-export interface stateType {
-    requestDetails : {},
-    customerInfo : {},
+    updateCustomerContact? : (value : {}) => void
 }
 
 export interface propsType {

@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { AppContext, stateType, propsType } from './utilities';
+import { AppContext, propsType } from './utilities';
 
 export const newCustomerContext = createContext<AppContext>({});
 
@@ -14,7 +14,7 @@ export const NewCustomerProvider = ({ children } : propsType) => {
                 updateCustomerProfile(value : {}) : void {
                     setRequestDetails({ ...requestDetails, ...value })
                 },
-                updateContact(value : {}) {
+                updateCustomerContact(value : {}) : void {
                     setCustomerInfo({ ...customerInfo, ...value })
                 }
             }}
