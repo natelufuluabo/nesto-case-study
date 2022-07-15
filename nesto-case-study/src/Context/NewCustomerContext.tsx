@@ -4,23 +4,18 @@ import { AppContext, stateType, propsType } from './utilities';
 export const newCustomerContext = createContext<AppContext>({});
 
 export const NewCustomerProvider = ({ children } : propsType) => {
-    const [requestInfo, setRequestInfo] = useState<stateType>({
-        requestDetails : {},
-        customerInfo : {}
-    })
+    const [requestDetails, setRequestDetails] = useState({})
+    const [customerInfo, setCustomerInfo] = useState({})
     return (
         <newCustomerContext.Provider
             value={{
-                ...requestInfo, 
+                ...requestDetails,
+                ...customerInfo,
                 updateCustomerProfile(value : {}) : void {
-                    setRequestInfo({
-                        ...requestInfo, ...value
-                    })
+                    setRequestDetails({ ...requestDetails, ...value })
                 },
                 updateContact(value : {}) {
-                    setRequestInfo({
-                        ...requestInfo, ...value
-                    })
+                    setCustomerInfo({ ...customerInfo, ...value })
                 }
             }}
         >
