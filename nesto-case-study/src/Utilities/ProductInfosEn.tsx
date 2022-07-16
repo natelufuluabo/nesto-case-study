@@ -1,4 +1,4 @@
-const productInfos = [
+const productInfosEn = [
     {
         id : 'extra',
         termLength : '1-YR',
@@ -43,4 +43,4 @@ const productInfos = [
     }
 ]
 
-export default productInfos;
+export default productInfosEn;

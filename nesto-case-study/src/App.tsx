@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
+import RatePage from './Pages/RatePage';
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <RatePage />
   );
 }
 
