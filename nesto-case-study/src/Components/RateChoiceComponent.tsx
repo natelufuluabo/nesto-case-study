@@ -1,5 +1,5 @@
 import React from "react";
-import nestoLogo from '../Images/nesto-logo.webp';
+import nestoLogo from '../Assets/nesto-logo.webp';
 import { Link } from 'react-router-dom';
 
 interface propsType {
@@ -20,7 +20,9 @@ const RateChoiceComponent = ({ termLength, rate, provider } : propsType) => {
                     <img alt="Nesto-Logo" width={'70px'} src={nestoLogo} />
                     <h3 className="rate-provider">{provider}</h3>
                 </div>
-                <button className="get-rate-button get-rate-container">Get this rate</button>
+                <Link to='/getaquote'>
+                    <button className="get-rate-button get-rate-container">Get this rate</button>
+                </Link>
             </div>
         </div>
     )

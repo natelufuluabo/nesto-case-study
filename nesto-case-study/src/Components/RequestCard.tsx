@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { newCustomerContext } from "../Context/NewCustomerContext";
+import { newCustomerContext } from "../Context/New Customer Context/NewCustomerContext";
 
 interface propsType {
     path : string,

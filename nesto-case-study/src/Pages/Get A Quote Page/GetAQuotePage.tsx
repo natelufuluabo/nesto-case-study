@@ -1,6 +1,6 @@
 import React from "react";
-import detailsEn from '../Utilities/RequestDetailsEn';
-import RequestCard from "../Components/RequestCard";
+import detailsEn from '../../Utilities/RequestDetailsEn';
+import RequestCard from "../../Components/RequestCard";
 
 const [newMortgage, renewal, refinance] = detailsEn;
 

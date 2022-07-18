@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { handleProductShowing } from '../Utilities/RatePageUtilities';
+import { handleProductShowing } from '../../Utilities/RatePageUtilities';
 
 const RatePage : React.FC = () => {
     const [showMore, setShowMore] = useState(false);

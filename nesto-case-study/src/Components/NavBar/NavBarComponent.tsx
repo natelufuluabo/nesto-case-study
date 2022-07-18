@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import nestoLogoEn from '../Images/logo_nesto_en.png';
-import nestoLogoFr from '../Images/logo_nesto_fr.png';
+import nestoLogoEn from '../../Assets/logo_nesto_en.png';
+import nestoLogoFr from '../../Assets/logo_nesto_fr.png';
 
 const NavBar = () => {
     const [language, setLanguage] = useState({
